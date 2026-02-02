@@ -1,0 +1,76 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background: #242b25;
+    color: white;
+}
+
+canvas {
+    border: 2px solid #ccc;
+    touch-action: none;
+}
+
+.controls {
+    margin-top: 15px;
+}
+
+.controls button {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    background: #3a3a3a;
+    color: white;
+    touch-action: manipulation;
+}
+
+.controls button:active {
+    background: #5a5a5a;
+}
+
+@media (min-width: 768px) {
+    .controls {
+        display: none;
+    }
+}
+
+.game-over {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.game-over h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.game-over p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.game-over button {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background: lime;
+    color: black;
+    cursor: pointer
+}
+
+.hidden {
+    display: none;
+}
